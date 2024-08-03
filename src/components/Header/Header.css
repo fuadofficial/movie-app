@@ -1,0 +1,28 @@
+.header {
+  width: 1005;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.header .left {
+  display: flex;
+}
+.header .left .movie-img img {
+  width: 35px;
+  margin-top: 4px;
+}
+.header .left .movie-name h1 {
+  font-size: 30px;
+  color: rgba(219, 22, 22, 0.832);
+  font-weight: 800;
+  margin-left: 10px;
+}
+.header .right .toggle-btn-dark {
+  font-size: 30px;
+  color: red;
+}
+.header .right .toggle-btn-light {
+  font-size: 30px;
+}
