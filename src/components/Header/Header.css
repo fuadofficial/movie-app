@@ -11,7 +11,6 @@
 }
 .header .left .movie-img img {
   width: 35px;
-  margin-top: 4px;
 }
 .header .left .movie-name h1 {
   font-size: 30px;
@@ -19,10 +18,7 @@
   font-weight: 800;
   margin-left: 10px;
 }
-.header .right .toggle-btn-dark {
+.header .right .toggle-btn{
   font-size: 30px;
   color: red;
-}
-.header .right .toggle-btn-light {
-  font-size: 30px;
 }

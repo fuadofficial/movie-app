@@ -1,17 +1,21 @@
 import { useState } from 'react';
-import './Header.css'
-import { CiLight } from "react-icons/ci";
-import { FaMoon } from "react-icons/fa";
+import './Header.css';
+import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 
 const Header = () => {
-    const [toggel, setToggel] = useState(false)
+    const [toggle, setToggle] = useState(true);
+
+    const toggleDarkMode = () => {
+        console.log("button clicked ", toggle);
+        setToggle(!toggle);
+    }
 
     return (
         <header>
             <div className="header">
                 <div className="left">
                     <div className="movie-img">
-                        <img src="../../../public/img/movie icon.png" alt="" />
+                        <img src="/img/movie icon.png" alt="Movie Icon" />
                     </div>
                     <div className="movie-name">
                         <h1>MovieHub</h1>
@@ -19,15 +23,14 @@ const Header = () => {
                 </div>
                 <div className="right">
                     <div className="toggle-btn-dark">
-                        {toggel ?
-                            <button className='light' onClick={() => setToggel(true)}><CiLight /></button>
-                            : <button className='dark' onClick={() => setToggel(false)}><FaMoon /></button>
-                        }
+                        <button onClick={toggleDarkMode}>
+                            {toggle ? <BsSunFill /> : <BsMoonFill />}
+                        </button>
                     </div>
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

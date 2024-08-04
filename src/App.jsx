@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home/Home"
 import Movie from "./pages/Movie/Movie"
-import Header from "./components/Header/Header"
+import  Header  from "./components/Header/Header"
 
 
 const App = () => {
@@ -21,4 +21,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
