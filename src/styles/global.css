@@ -5,8 +5,16 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+:root {
+  --white: rgba(0, 0, 0, 0);
+  --black: rgba(0, 0, 0, 0.9);
+  --white-color: #fff;
+  --black-color: #000;
+}
 .app {
   background: url("../assets/bg.png");
+  background-color: var(--black);
+  color: var(--white-color);
   position: relative;
   min-height: 100vh;
   width: 100%;

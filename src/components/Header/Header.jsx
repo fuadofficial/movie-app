@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './Header.css';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
+import logo from "../../assets/logo.png";
 
 const Header = () => {
     const [toggle, setToggle] = useState(true);
 
     const toggleDarkMode = () => {
-        console.log("button clicked ", toggle);
         setToggle(!toggle);
     }
 
@@ -15,16 +15,16 @@ const Header = () => {
             <div className="header">
                 <div className="left">
                     <div className="movie-img">
-                        <img src="/img/movie icon.png" alt="Movie Icon" />
+                        <img src={logo} alt="Movie Icon" />
                     </div>
                     <div className="movie-name">
-                        <h1>MovieHub</h1>
+                        <h1>MOVIE WORLD</h1>
                     </div>
                 </div>
                 <div className="right">
                     <div className="toggle-btn-dark">
                         <button onClick={toggleDarkMode}>
-                            {toggle ? <BsSunFill /> : <BsMoonFill />}
+                            {toggle ?  <BsMoonFill/> : <BsSunFill /> }
                         </button>
                     </div>
                 </div>

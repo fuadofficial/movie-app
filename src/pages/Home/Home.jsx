@@ -1,8 +1,9 @@
+import SigninPage from "../SigninPage/SigninPage"
 
 const Home = () => {
     return (
-        <div>
-            Home
+        <div className="home-container">
+            <SigninPage />
         </div>
     )
 }

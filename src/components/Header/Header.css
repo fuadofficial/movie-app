@@ -18,7 +18,11 @@
   font-weight: 800;
   margin-left: 10px;
 }
-.header .right .toggle-btn{
+.header .right button {
   font-size: 30px;
-  color: red;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  border-radius: 4px;
 }
