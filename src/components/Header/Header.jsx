@@ -2,9 +2,21 @@ import { useState } from 'react';
 import './Header.css';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import logo from "../../assets/logo.png";
+import { useAuth } from '../../context/authContext';
+import { TbArrowBigRightLinesFilled } from "react-icons/tb";
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
     const [toggle, setToggle] = useState(true);
+    const { auth, setAuth } = useAuth()
+
+    const navigate = useNavigate()
+
+    const changePage = () => {
+        setAuth(false)
+        navigate(-1)
+    }
 
     const toggleDarkMode = () => {
         setToggle(!toggle);
@@ -26,6 +38,11 @@ const Header = () => {
                         <button onClick={toggleDarkMode}>
                             {toggle ? <BsMoonFill /> : <BsSunFill />}
                         </button>
+                        {auth &&
+                            <button onClick={changePage}>
+                                <TbArrowBigRightLinesFilled />
+                            </button>
+                        }
                     </div>
                 </div>
             </div>

@@ -25,4 +25,5 @@
   border: 1px solid var(--white-color);
   color: var(--white-color);
   border-radius: 4px;
+  margin-right: 5px;
 }
