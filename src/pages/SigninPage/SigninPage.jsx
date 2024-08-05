@@ -1,20 +1,47 @@
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import { useAuth } from '../../context/authContext'
 import './SigninPage.css'
+
 const SigninPage = () => {
-    const { handleEmail, handlePassword, handleSubmit } = useAuth()
+    const navigate = useNavigate()
+    const { setAuth } = useAuth()
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        if (email === "" || password === "") {
+            alert("Wrong credentials")
+        } else {
+            setAuth(true)
+            navigate('/movie')
+        }
+    }
+
     return (
         <div className='sign-container'>
             <div className="sign-box">
-                <form action="" onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit}>
                     <h2>Sign in</h2>
                     <div className="input-section">
-                        <input onChange={handleEmail} type="email" placeholder='email' />
+                        <input
+                            onChange={(e) => setEmail(e.target.value)}
+                            type="email"
+                            placeholder='email'
+                            value={email}
+                        />
                     </div>
                     <div className="input-section">
-                        <input onChange={handlePassword} type="text" placeholder='password' />
+                        <input
+                            onChange={(e) => setPassword(e.target.value)}
+                            type="password"
+                            placeholder='password'
+                            value={password}
+                        />
                     </div>
                     <div className="button">
-                        <button type='submit'>Signin</button>
+                        <button type='submit'>Sign in</button>
                     </div>
                     <p className='forgot'>Forgot Password</p>
                     <p className='sign'>New to Movie Logham? <span>Sign up now.</span></p>
