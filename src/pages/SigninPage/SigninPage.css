@@ -39,13 +39,25 @@
   height: 50px;
   border: none;
   border-radius: 4px;
-  background-color: red;
+  background-color: rgb(216, 8, 8);
   margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.sign-box button:hover {
+  background-color: rgb(192, 8, 8);
 }
 .sign-box .forgot {
-  font-size: 16px;
-  margin-left: 239px;
+  font-size: 14px;
+  margin-left: 228px;
   margin-top: 20px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.sign-box .forgot:hover {
+  color: rgb(101, 101, 235);
 }
 .sign-box .sign {
   font-size: 13px;
@@ -54,4 +66,9 @@
 }
 .sign-box .sign span {
   color: rgb(101, 101, 235);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.sign-box .sign span:hover {
+  color: rgb(72, 72, 245);
 }

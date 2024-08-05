@@ -30,6 +30,7 @@ const SigninPage = () => {
                             type="email"
                             placeholder='email'
                             value={email}
+                            required
                         />
                     </div>
                     <div className="input-section">
@@ -38,13 +39,14 @@ const SigninPage = () => {
                             type="password"
                             placeholder='password'
                             value={password}
+                            required
                         />
                     </div>
                     <div className="button">
                         <button type='submit'>Sign in</button>
                     </div>
                     <p className='forgot'>Forgot Password</p>
-                    <p className='sign'>New to Movie Logham? <span>Sign up now.</span></p>
+                    <p className='sign'>New to Movie World? <span>Sign up now.</span></p>
                 </form>
             </div>
         </div>
