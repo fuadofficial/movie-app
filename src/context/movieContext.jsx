@@ -3,7 +3,6 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext()
 
-// eslint-disable-next-line react/prop-types
 export const MovieProvider = ({ children }) => {
     const [movie, setMovie] = useState([])
     const [inputValue, setInputValue] = useState("")
@@ -14,7 +13,7 @@ export const MovieProvider = ({ children }) => {
 
     useEffect(() => {
         getMovieList()
-    }, [])
+    }, [inputValue])
 
 
     const getMovieList = async () => {
@@ -33,7 +32,7 @@ export const MovieProvider = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ movie, onChangeHandle, setInputValue }}>
+        <AuthContext.Provider value={{ movie,inputValue, onChangeHandle, setInputValue }}>
             {children}
         </AuthContext.Provider>
     )

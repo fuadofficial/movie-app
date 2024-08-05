@@ -24,7 +24,7 @@ const Header = () => {
                 <div className="right">
                     <div className="toggle-btn-dark">
                         <button onClick={toggleDarkMode}>
-                            {toggle ?  <BsMoonFill/> : <BsSunFill /> }
+                            {toggle ? <BsMoonFill /> : <BsSunFill />}
                         </button>
                     </div>
                 </div>
