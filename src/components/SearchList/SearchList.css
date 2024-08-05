@@ -1,0 +1,17 @@
+.searchlist-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 100px;
+}
+.searchlist-container .movie-card {
+  width: 200px;
+  margin: 10px;
+}
+.searchlist-container .movie-card img {
+  width: 100%;
+  height: 100%;
+}

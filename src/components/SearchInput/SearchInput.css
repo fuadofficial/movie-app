@@ -10,6 +10,7 @@
   color: var(--black);
 }
 .search-container .input {
+    max-width: 500px;
   display: flex;
   align-items: center;
   width: 70%;
