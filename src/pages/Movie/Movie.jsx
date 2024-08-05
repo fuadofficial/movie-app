@@ -1,8 +1,11 @@
+import SearchInput from "../../components/SearchInput/SearchInput"
+import SearchList from "../../components/SearchList/SearchList"
 
 const Movie = () => {
     return (
         <div>
-            movie
+            <SearchInput />
+            <SearchList />
         </div>
     )
 }

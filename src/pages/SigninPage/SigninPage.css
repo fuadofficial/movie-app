@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 .sign-box .forgot:hover {
-  color: rgb(101, 101, 235);
+  color: rgb(192, 8, 8);
 }
 .sign-box .sign {
   font-size: 13px;
@@ -65,10 +65,10 @@
   margin-top: 20px;
 }
 .sign-box .sign span {
-  color: rgb(101, 101, 235);
+  color: rgb(216, 8, 8);
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
 .sign-box .sign span:hover {
-  color: rgb(72, 72, 245);
+  color: rgb(192, 8, 8);
 }
