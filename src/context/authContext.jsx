@@ -2,19 +2,33 @@ import { createContext, useContext, useState } from "react";
 
 export const AuthContext = createContext()
 
-// eslint-disable-next-line react/prop-types
 export const AuthProvider = ({ children }) => {
     const [auth, setAuth] = useState(false)
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
 
-    const logout = () => {
-        setAuth(false)
+
+
+    const handleEamil = (event) => {
+        setEmail(event.target.value)
     }
-    const login = () => {
-        setAuth(true)
+
+    const handlePassword = (event) => {
+        setPassword(event.target.value)
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        if (email === "" || password === "") {
+            alert("wrong credentials");
+        } else {
+            setAuth(true);
+            navigate("/");
+        }
     }
 
     return (
-        <AuthContext.Provider value={{ auth, logout, login }}>
+        <AuthContext.Provider value={{ handleEamil, handlePassword, handleSubmit }}>
             {children}
         </AuthContext.Provider>
     )
