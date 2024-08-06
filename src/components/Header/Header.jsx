@@ -10,7 +10,7 @@ import { useTheme } from '../../context/themeContext';
 
 const Header = () => {
     const { auth, setAuth } = useAuth()
-    const { toggle, toggleDarkMode } = useTheme()
+    const { toggle, changeTheme } = useTheme()
 
     const navigate = useNavigate()
 
@@ -32,18 +32,30 @@ const Header = () => {
                 </div>
                 <div className="right">
                     <div className="toggle-btn-dark">
-                        <button onClick={toggleDarkMode}>
+                        <button onClick={changeTheme}
+                            style={toggle ?
+                                { border: "1px solid white", color: "white" }
+                                :
+                                { border: "1px solid black", color: "black" }
+                            }
+                        >
                             {toggle ? <BsSunFill /> : <BsMoonFill />}
                         </button>
                         {auth &&
-                            <button onClick={changePage}>
+                            <button onClick={changePage}
+                                style={toggle ?
+                                    { border: "1px solid white", color: "white" }
+                                    :
+                                    { border: "1px solid black", color: "black" }
+                                }
+                            >
                                 <TbArrowBigRightLinesFilled />
                             </button>
                         }
                     </div>
                 </div>
             </div>
-        </header>
+        </header >
     );
 };
 

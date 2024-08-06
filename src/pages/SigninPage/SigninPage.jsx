@@ -7,9 +7,9 @@ import { useTheme } from '../../context/themeContext'
 const SigninPage = () => {
     const navigate = useNavigate()
     const { setAuth } = useAuth()
+    const { toggle } = useTheme()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const { toggle } = useTheme()
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -20,6 +20,7 @@ const SigninPage = () => {
             navigate('/movie')
         }
     }
+    
 
     return (
         <div className='sign-container'>

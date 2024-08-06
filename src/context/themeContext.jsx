@@ -5,12 +5,12 @@ export const AuthContext = createContext()
 export const ThemeContext = ({ children }) => {
     const [toggle, setToggle] = useState(true);
 
-    const toggleDarkMode = () => {
+    const changeTheme = () => {
         setToggle(!toggle)
-    }
+    }    
 
     return (
-        <AuthContext.Provider value={{ toggle, setToggle, toggleDarkMode }}>
+        <AuthContext.Provider value={{ toggle, setToggle, changeTheme }}>
             {children}
         </AuthContext.Provider>
     )
