@@ -17,6 +17,7 @@ const Header = () => {
     const changePage = () => {
         setAuth(false)
         navigate(-1)
+        localStorage.removeItem('userName');
     }
 
     return (

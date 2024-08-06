@@ -5,6 +5,8 @@ import Error from "./pages/Error/Error"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 import { useTheme } from "./context/themeContext"
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute"
+import Login from "./pages/Login/Login"
 
 
 const App = () => {
@@ -18,8 +20,11 @@ const App = () => {
             <Router>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/movie" element={<Movie />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route element={<ProtectedRoute />}>
+                        <Route path="/movie" element={<Movie />} />
+                    </Route>
                     <Route path="*" element={<Error />} />
                 </Routes>
                 <Footer />

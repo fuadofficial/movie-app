@@ -12,8 +12,13 @@ export const MovieProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        getMovieList()
-    }, [inputValue])
+        const handler = setTimeout(() => {
+            getMovieList();
+        }, 500);
+        return () => {
+            clearTimeout(handler);
+        };
+    }, [inputValue]);
 
 
     const getMovieList = async () => {
@@ -32,7 +37,7 @@ export const MovieProvider = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ movie,inputValue, onChangeHandle, setInputValue }}>
+        <AuthContext.Provider value={{ movie, inputValue, onChangeHandle, setInputValue }}>
             {children}
         </AuthContext.Provider>
     )
