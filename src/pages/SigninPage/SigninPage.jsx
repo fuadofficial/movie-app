@@ -19,7 +19,6 @@ const SigninPage = () => {
         }
     }
 
-
     return (
         <div className='sign-container'>
             <div className="sign-box">
