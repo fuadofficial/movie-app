@@ -8,8 +8,13 @@
   padding: 20px 100px;
 }
 .searchlist-container .movie-card {
+  cursor: pointer;
   width: 200px;
   margin: 10px;
+  transition: all 400ms ease-in-out;
+}
+.searchlist-container .movie-card:hover {
+  padding: 5px;
 }
 .searchlist-container .movie-card img {
   width: 100%;
