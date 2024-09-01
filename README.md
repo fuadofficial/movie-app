@@ -52,5 +52,6 @@ API Requests: Axios for making API calls from the frontend
 
 
 
+https://github.com/fuadofficial/movie-app/raw/master/Vite%20+%20React%20-%20Google%20Chrome%202024-09-01%2007-10-49.mp4
 
 
