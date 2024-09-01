@@ -54,13 +54,24 @@ API Requests: Axios for making API calls from the frontend
 Images :
 
 
+Login page:
+
 
 
 ![Vite + React - Google Chrome 9_1_2024 8_38_52 AM](https://github.com/user-attachments/assets/daaa4547-ddc5-4ff0-b159-650ff6edc666)
 
 
 
+Movies search list :
+
+
+
 ![Vite + React - Google Chrome 9_1_2024 8_39_05 AM](https://github.com/user-attachments/assets/94af1c4a-bed8-40bc-ac2a-c7361ae301e1)
+
+
+
+Movie in light mode:
+
 
 
 
