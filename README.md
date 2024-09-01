@@ -51,6 +51,17 @@ API Requests: Axios for making API calls from the frontend
 
 
 
+Images :
+
+
+
+
+![Uploading Vite + React - Google Chrome 9_1_2024 8_39_05 AM.png…]()
+![Vite + React - Google Chrome 9_1_2024 8_38_52 AM](https://github.com/user-attachments/assets/daaa4547-ddc5-4ff0-b159-650ff6edc666)
+
+
+video link:
+
 
 https://github.com/fuadofficial/movie-app/raw/master/Vite%20+%20React%20-%20Google%20Chrome%202024-09-01%2007-10-49.mp4
 
