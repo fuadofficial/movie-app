@@ -9,6 +9,8 @@ A responsive movie search application built with React for the frontend and Node
 
 
 
+
+
 🚀 Features
 
 
