@@ -2,19 +2,12 @@
 
 
 
-
-
 A responsive movie search application built with React for the frontend and Node.js with Express for the backend. The app allows users to search for movies by title, with data dynamically filtered and returned from a JSON file.
-
-
-  
-
 
 
 
 
 🚀 Features
-
 
 
 Search Functionality: Users can search for movies by title, with results displayed instantly.
